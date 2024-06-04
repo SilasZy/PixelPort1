@@ -1,0 +1,124 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+.letra-mudada {
+    font-size: larger;
+}
+
+.container-login {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    text-align: center;
+}
+
+.pagina1 {
+    background: none;
+    border: none;
+}
+
+p {
+    color: black;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+button {
+    background-color: yellowgreen;
+    border-color: black;
+}
+
+p {
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    width: 20%;
+    height: 30%;
+    background-color: aqua;
+    background-image: radial-gradient(rgba(7, 7, 7, 0.952) 2px, transparent 20);
+    background-size: 30px 30px;
+    background-position: -5px -5px;
+}
+
+.navbar {
+    position: absolute;
+    left: 0;
+    width: 100%;
+}
+
+.navbar-nav .nav-link[href='#'] {
+    color: black;
+}
+
+.container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-nav {
+    flex-direction: row;
+}
+
+.nav-link {
+    padding: 0 15px;
+}
+
+.navbar-nav .nav-link {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+}
+
+#images-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#images-section {
+    column-count: 2;
+    column-gap: 12px;
+}
+
+.search-results {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    justify-content: center;
+}
+
+.result-item {
+    margin: 10px;
+    text-align: center;
+}
+
+.result-item img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.container-footer {
+    background-color: black;
+}
+
+.footer .copyright {
+    text-align: center;
+    color: white;
+    padding-left: 10%;
+}
+
+.footer .credits {
+    padding-top: 6px;
+    text-align: center;
+    font-size: 13px;
+    color: white;
+}
