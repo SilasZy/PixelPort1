@@ -4,11 +4,11 @@ document.addEventListener("DOMContentLoaded", function() {
         var login = document.getElementById("loginInput").value;
         var senha = document.getElementById("senhaInput").value;
         
-        if (login === "silasGabriel@gmail.com" && senha === "444") {
+        if (login === "silasGabriel@gmail.com" && senha === "12345") {
             alert("Logado com sucesso!");
-            window.location.href = "navegation.html";
+            window.location.href = "Pixelport.html";
         } else {
             alert("Email ou senha incorretos. Por favor, tente novamente.");
         }
     });
-});
+}); 

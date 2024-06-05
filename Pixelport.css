@@ -1,26 +1,60 @@
-body {
+.container-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: repeating-linear-gradient(80deg, rgb(14,13,13) 0px, rgb(14,13,13) 10px,transparent 10px, transparent 12px),repeating-linear-gradient(228deg, rgb(14,13,13) 0px, rgb(14,13,13) 10px,transparent 10px, transparent 12px),repeating-linear-gradient(127deg, rgb(14,13,13) 0px, rgb(14,13,13) 10px,transparent 10px, transparent 12px),linear-gradient(90deg, rgb(11,157,246),rgb(14,121,219));
+
+
+}
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
     background-color: black;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color:white;
+  font-size: 15px;
+}
+
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+label, input, button {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+
+button {
+    padding: 10px;
+    background-color: #007BFF;
     color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+
+.index-body{
+    background-color: black;
 }
 
 .letra-mudada {
     font-size: larger;
+    color:azure
 }
 
-.container-login {
-    text-align: center;
-}
-
-h1 {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: larger;
-    text-align: center;
-}
-
-.pagina1 {
-    background: none;
-    border: none;
-}
 
 p {
     color: black;
@@ -29,24 +63,13 @@ p {
     justify-content: center;
 }
 
-button {
-    background-color: yellowgreen;
-    border-color: black;
-}
 
 p {
     font-size: larger;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.container {
-    width: 20%;
-    height: 30%;
-    background-color: aqua;
-    background-image: radial-gradient(rgba(7, 7, 7, 0.952) 2px, transparent 20);
-    background-size: 30px 30px;
-    background-position: -5px -5px;
-}
+
 
 .navbar {
     position: absolute;
