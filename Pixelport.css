@@ -1,3 +1,25 @@
+
+.PixelPort{
+    font-size: clamp(12px,4vw,32px);
+    color:whitesmoke;
+ 
+}
+
+.dropdown-menu{
+    background-color: #007BFF;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+
+}
+.dropdown-item:hover{
+ text-align: right;
+ color:black;
+ cursor: pointer;
+background-color: #0056b3;
+}
+
+  
+
 .container-login {
     display: flex;
     justify-content: center;
@@ -28,20 +50,25 @@
 label, input, button {
     margin-bottom: 10px;
     width: 100%;
+    border-color: blue;
+    border-top-color: yellow;
+border-bottom-color: yellow;
+border-radius: 50px;
 }
 
 
 button {
     padding: 10px;
     background-color: #007BFF;
-    color: white;
+    color: black;
     border: none;
-    border-radius: 4px;
     cursor: pointer;
+    
 }
 
 button:hover {
     background-color: #0056b3;
+    
 }
 
 
@@ -50,10 +77,6 @@ button:hover {
     background-color: black;
 }
 
-.letra-mudada {
-    font-size: larger;
-    color:azure
-}
 
 
 p {
@@ -105,6 +128,7 @@ p {
     height: auto;
     border-radius: 5px;
     margin-bottom: 10px;
+  
 }
 
 #images-section {
@@ -129,8 +153,57 @@ p {
     border-radius: 5px;
 }
 
+/* meu card do perfil */
+.card{
+    align-items: left;
+    justify-content: end;
+    margin-left: 30%;
+margin-right: 30%;
+display: flex;
+}
+.alert{
+background-color: azure;
+color: rgb(12, 230, 12);
+font-size: 20px;
+}
+
+
+.card-title{
+color: rgb(12, 230, 12);
+font-size: 30px;
+text-align: center;
+font-style: italic;
+
+}
+.card-text{
+    color: rgb(12, 230, 12);
+    justify-content: right end;
+    font-style: italic;
+}
+
+.card-body{
+    background-color: #007BFF;
+}
+/* fim do meu card */
+
+/* corpo do perfil */
+.myPerfil{
+    background-image: repeating-linear-gradient(80deg, rgb(14,13,13) 0px, rgb(14,13,13) 10px,transparent 10px, transparent 12px),repeating-linear-gradient(228deg, rgb(14,13,13) 0px, rgb(14,13,13) 10px,transparent 10px, transparent 12px),repeating-linear-gradient(127deg, rgb(14,13,13) 0px, rgb(14,13,13) 10px,transparent 10px, transparent 12px),linear-gradient(90deg, rgb(11,157,246),rgb(14,121,219));
+}
+/* corpo do perfil */
+
+.container-footerp{
+    background-image: repeating-linear-gradient(80deg, rgb(14,13,13) 0px, rgb(14,13,13) 10px,transparent 10px, transparent 12px),repeating-linear-gradient(228deg, rgb(14,13,13) 0px, rgb(14,13,13) 10px,transparent 10px, transparent 12px),repeating-linear-gradient(127deg, rgb(14,13,13) 0px, rgb(14,13,13) 10px,transparent 10px, transparent 12px),linear-gradient(90deg, rgb(11,157,246),rgb(14,121,219));
+}
+
+.footer .copyright, .footer .credits {
+    text-align: center;
+    color: white;
+    padding: 10px 0;
+}
+
 .container-footer {
-    background-color: black;
+   background-color: black;
 }
 
 .footer .copyright {
