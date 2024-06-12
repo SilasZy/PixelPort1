@@ -16,15 +16,16 @@ async function searchImages() {
     const response = await fetch(url);
     const data = await response.json();
     const results = data.results;
-
+    
     if (page === 1) {
         searchResults.innerHTML = "";
-        imagesSection.innerHTML = ""; // Clear static images
+        imagesSection.innerHTML = "";  
+
     }
 
     results.forEach((result) => {
         const imageWrapper = document.createElement("div");
-        imageWrapper.classList.add("result-item");
+        imageWrapper.classList.add("result-item","text-center",);
 
         const image = document.createElement("img");
         image.src = result.urls.small;

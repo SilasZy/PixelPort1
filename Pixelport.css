@@ -1,25 +1,4 @@
 
-.PixelPort{
-    font-size: clamp(12px,4vw,32px);
-    color:whitesmoke;
- 
-}
-
-.dropdown-menu{
-    background-color: #007BFF;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 20px;
-
-}
-.dropdown-item:hover{
- text-align: right;
- color:black;
- cursor: pointer;
-background-color: #0056b3;
-}
-
-  
-
 .container-login {
     display: flex;
     justify-content: center;
@@ -50,33 +29,78 @@ background-color: #0056b3;
 label, input, button {
     margin-bottom: 10px;
     width: 100%;
-    border-color: blue;
-    border-top-color: yellow;
-border-bottom-color: yellow;
-border-radius: 50px;
 }
 
 
 button {
     padding: 10px;
     background-color: #007BFF;
-    color: black;
+    color: white;
     border: none;
+    border-radius: 4px;
     cursor: pointer;
-    
 }
 
 button:hover {
     background-color: #0056b3;
-    
 }
 
-
-
+.dropdown-menu:hover{
+    background-color: #007BFF;
+    padding: 10px;
+    color: blue;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.dropdown-item:hover{
+    background-color: #007BFF;
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
 .index-body{
     background-color: black;
+   
+}
+@keyframes lighting {
+    0% {
+        transform: rotateX('rotate');
+        color: azure;
+    }
+  
+    100% {
+        transform: translateX('rotate');
+        color: black;
+    }
+    50%{
+        transform-box: lighting 8s initial;
+        
+    }
 }
 
+
+h1 {
+    animation: lighting  5s infinite;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+   
+}
+h1{
+    color: azure;
+}
+.container {
+    flex: 1;
+}
 
 
 p {
@@ -118,9 +142,10 @@ p {
     padding: 0 15px;
 }
 
-.navbar-nav .nav-link {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: larger;
+.navbar-nav .nav-link:hover {
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 }
 
 #images-section img {
@@ -128,8 +153,9 @@ p {
     height: auto;
     border-radius: 5px;
     margin-bottom: 10px;
-  
+
 }
+
 
 #images-section {
     column-count: 2;
@@ -137,24 +163,45 @@ p {
 }
 
 .search-results {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 10px;
-    justify-content: center;
-}
+justify-content: center;
+border: 30px;
+column-count: 2;
 
+}
 .result-item {
-    margin: 10px;
+    margin: 20px;
     text-align: center;
+border: 14px solid  white;
+
 }
 
 .result-item img {
-    max-width: 100%;
+    min-width : 100%;
     border-radius: 5px;
+    max-width: 100%;
+   
+
 }
 
-/* meu card do perfil */
-.card{
+.container-footer {
+    background-color: black;
+}
+
+.footer .copyright {
+    text-align: center;
+    color: white;
+    padding-left: 10%;
+}
+
+.footer .credits {
+    padding-top: 6px;
+    text-align: center;
+    font-size: 13px;
+    color: white;
+}
+/* outra pagina do perfil */
+
+.card-container{
     align-items: left;
     justify-content: end;
     margin-left: 30%;
@@ -184,9 +231,6 @@ font-style: italic;
 .card-body{
     background-color: #007BFF;
 }
-/* fim do meu card */
-
-/* corpo do perfil */
 .myPerfil{
     background-image: repeating-linear-gradient(80deg, rgb(14,13,13) 0px, rgb(14,13,13) 10px,transparent 10px, transparent 12px),repeating-linear-gradient(228deg, rgb(14,13,13) 0px, rgb(14,13,13) 10px,transparent 10px, transparent 12px),repeating-linear-gradient(127deg, rgb(14,13,13) 0px, rgb(14,13,13) 10px,transparent 10px, transparent 12px),linear-gradient(90deg, rgb(11,157,246),rgb(14,121,219));
 }
@@ -201,20 +245,49 @@ font-style: italic;
     color: white;
     padding: 10px 0;
 }
-
-.container-footer {
-   background-color: black;
+.PixelPort{
+ color:azure;
+ font-size: larger;
 }
 
-.footer .copyright {
-    text-align: center;
+.back-galeria{
+    background-color: black;
+}
+
+#gallery-section {
+    background-color: black;
+    padding: 40px;
+  padding-bottom: 30px;
+}
+
+#gallery-section h1 {
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color: #333;
     color: white;
-    padding-left: 10%;
 }
 
-.footer .credits {
-    padding-top: 6px;
-    text-align: center;
-    font-size: 13px;
-    color: white;
+.card-img-top {
+    border-radius: 5px;
 }
+
+.card-body {
+    background-color: #444;
+    color: white;
+   
+}
+
+.card-title {
+    color: #007BFF;
+}
+
+.card-text {
+    color: #ccc;
+}
+/* corpo da cidade */
+.body-galeriSave{
+    background-color: black;
+}
+
