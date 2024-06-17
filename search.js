@@ -34,12 +34,13 @@ async function searchImages() {
         const imageLink = document.createElement("a");
         imageLink.href = result.links.html;
         imageLink.target = "_blank";
-        imageLink.textContent = result.alt_description || "View Image";
-
-        imageWrapper.appendChild(image);
+       
+        
         imageWrapper.appendChild(imageLink);
-
+        imageWrapper.appendChild(image);
         searchResults.appendChild(imageWrapper);
+        imageLink.appendChild(image);
+
     });
 
     if (results.length > 0) {
@@ -55,13 +56,18 @@ formEl.addEventListener("submit", (event) => {
     event.preventDefault();
     page = 1;
     searchImages();
+    
 });
 
 searchButton.addEventListener("click", () => {
     page = 1;
     searchImages();
+   
+
 });
 
 showMoreBtn.addEventListener("click", () => {
     searchImages();
 });
+
+

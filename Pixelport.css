@@ -1,4 +1,7 @@
 
+
+
+
 .container-login {
     display: flex;
     justify-content: center;
@@ -45,21 +48,32 @@ button:hover {
     background-color: #0056b3;
 }
 
+
+
 .dropdown-menu:hover{
     background-color: #007BFF;
-    padding: 10px;
+    padding: 15px;
     color: blue;
     border: none;
-    border-radius: 4px;
+    border-radius: 5%;
     cursor: pointer;
+    display: block;
+ font-size: 20px;
+
 }
+
+
 .dropdown-item:hover{
     background-color: #007BFF;
-    padding: 10px;
+    padding: 15px;
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+
 }
 .index-body{
     background-color: black;
@@ -122,6 +136,7 @@ p {
     position: absolute;
     left: 0;
     width: 100%;
+
 }
 
 .navbar-nav .nav-link[href='#'] {
@@ -140,10 +155,11 @@ p {
 
 .nav-link {
     padding: 0 15px;
+    font-size: 20px;
 }
 
 .navbar-nav .nav-link:hover {
-    font-size: 20px;
+    font-size: 25px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 }
@@ -169,9 +185,9 @@ column-count: 2;
 
 }
 .result-item {
-    margin: 20px;
+    margin: 5px;
     text-align: center;
-border: 14px solid  white;
+border: 12px solid  white;
 
 }
 
@@ -231,10 +247,11 @@ font-style: italic;
 .card-body{
     background-color: #007BFF;
 }
+/* corpo do perfil */
 .myPerfil{
     background-image: repeating-linear-gradient(80deg, rgb(14,13,13) 0px, rgb(14,13,13) 10px,transparent 10px, transparent 12px),repeating-linear-gradient(228deg, rgb(14,13,13) 0px, rgb(14,13,13) 10px,transparent 10px, transparent 12px),repeating-linear-gradient(127deg, rgb(14,13,13) 0px, rgb(14,13,13) 10px,transparent 10px, transparent 12px),linear-gradient(90deg, rgb(11,157,246),rgb(14,121,219));
 }
-/* corpo do perfil */
+
 
 .container-footerp{
     background-image: repeating-linear-gradient(80deg, rgb(14,13,13) 0px, rgb(14,13,13) 10px,transparent 10px, transparent 12px),repeating-linear-gradient(228deg, rgb(14,13,13) 0px, rgb(14,13,13) 10px,transparent 10px, transparent 12px),repeating-linear-gradient(127deg, rgb(14,13,13) 0px, rgb(14,13,13) 10px,transparent 10px, transparent 12px),linear-gradient(90deg, rgb(11,157,246),rgb(14,121,219));
@@ -286,8 +303,30 @@ font-style: italic;
 .card-text {
     color: #ccc;
 }
-/* corpo da cidade */
-.body-galeriSave{
+/* corpo geral da galeria */
+.body-geralGallery{
     background-color: black;
 }
 
+.btn-dark{
+    font-size: 16px;
+  
+}
+.btn-primary{
+width: 80px;
+border-radius: 20px;
+font-size: 15px;
+
+}
+
+#show-more-button{
+    background-color:#007BFF;
+    font-size: 17px;
+   margin-right: 20px;
+    border: none;
+   border-radius: 8px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+
+}
